@@ -1,7 +1,6 @@
-# :rocket: space-gladiatorsV3 :alien:
+# :rocket: Stocks App :alien:
 
-This is a real-time multiplayer game created with HTML5 and 
-pix.js! Goal is to create it for all devices. Some of the key take-aways from this projet include learning how to build a complete cross-platform game with HTML5, efficiently use the tools available for HTML5 game development, take the game's performance to the next level and advanced solutions to common HTML5 game development roadblocks.
+This is a real-time Stock tracking app created with HTML5 CSS3 and Javascript! adsfadsfasdfd   dsf sadf dasf adfasdf adf asdfdfasfadsfadsfadsfsad sdfsdafsdf Gwewrqaesfg agfwettAf gweraesdfr gbEraggasadf tg  asdf sadfgasfd gadfsera fdf Aretrtteesff afaffeatet b a.
 
 ## Summary
 
