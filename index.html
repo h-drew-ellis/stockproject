@@ -5,50 +5,94 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>New page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sign up</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!------ Include the above in your HEAD tag ---------->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+        </head>
+        <!------ Include the above in your HEAD tag ---------->
+        
+        <body id="background" class="card bg-light" style="background-image: url('plasma_d.gif')">
+
+            <!-- BOOTSTRAP NAVBAR -->
+            <nav class="navbar navbar-light" style="background-color:   rgb(210, 235, 204)">
+                <a class="navbar-brand" href="#">Navigation</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home Page <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign in</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Watchlist</a>
+                      </li>
+                    <!-- <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul> -->
+                  <!-- <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form> -->
+                </div>
+              </nav>
+
+
+
         <div class="container">
-            <br> 
-            <hr>
-            <div class="card bg-light" style="background-image: url('plasma_d.gif');">
-                <article class="card-body mx-auto" style="max-width: 400px;">
-                    <h4 class="card-title mt-3 text-center" style="color: #f9f9f9;">Create Account</h4>
-                    <p class="text-center" style="color: #fefefe;">Get started with your free account</p>
-                    <p> <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a> <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a> </p>
-                    <p class="divider-text"> <span class="bg-light">OR</span> </p>
+           
+            
+            
+                <article id="cardBody" class="card-body mx-auto">
+                    <h1 class="createAccount" class="card-title mt-3 text-center">Create New Account</h1>
+                    <p id="accountText" class="text-center" style="color: #fefefe;">Get started with your free Account below</p>
+                    <!-- <p> <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a> <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a> </p> -->
+                    <!-- <p class="divider-text"> <span class="bg-light">OR</span> </p> -->
                     <form>
                         <div class="form-group input-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                                <!-- <span class="input-group-text"> <i class="fa fa-user"></i> </span> -->
                             </div>
-                            <input name="" class="form-control" placeholder="Full name" type="text">
+                            <input class="textBoxes" name="" class="form-control" placeholder="Full name" type="text">
                         </div>                         
 
                         <!-- form-group// -->
                         <div class="form-group input-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                                <!-- <span class="input-group-text"> <i class="fa fa-envelope"></i> </span> -->
                             </div>
-                            <input name="" class="form-control" placeholder="Email address" type="email">
+                            <input class="textBoxes" name="" class="form-control" placeholder="Email address" type="email">
                         </div>                         
 
                         <!-- form-group// -->
                         <div class="form-group input-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                                <!-- <span id="phone"class="input-group-text"> <i class="fa fa-phone"></i> </span> -->
                             </div>
-                            <select class="custom-select" style="max-width: 120px;">
-                                <option selected="">+971</option>
-                                <option value="1">+972</option>
-                                <option value="2">+198</option>
-                                <option value="3">+701</option>
-                            </select>
-                            <input name="" class="form-control" placeholder="Phone number" type="text">
+                      
+                            <input class="textBoxes" name="" class="form-control" placeholder="Phone number" type="text">
                         </div>                         
 
                         <!-- form-group// -->
@@ -60,26 +104,27 @@
                         <!-- form-group end.// -->
                         <div class="form-group input-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                                <!-- <span class="input-group-text"> <i class="fa fa-lock"></i> </span> -->
                             </div>
-                            <input class="form-control" placeholder="Create password" type="password">
+                            <input class="textBoxes" class="form-control" placeholder="Create password" type="password">
                         </div>                         
 
                         <!-- form-group// -->
                         <div class="form-group input-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                                <!-- <span class="input-group-text"> <i class="fa fa-lock"></i> </span> -->
                             </div>
-                            <input class="form-control" placeholder="Repeat password" type="password">
+                            <input class="textBoxes" class="form-control" placeholder="Repeat password" type="password">
                         </div>                         
 
                         <!-- form-group// -->                         
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
+                            <button id="submitButton" type="submit" class="btn btn-primary btn-block">SIGN UP</button>
                         </div>                         
 
                         <!-- form-group// -->                         
-                        <p class="text-center" style="color: #f7f0f0;">Have an account? <a href="">Log In</a> </p> 
+                        <p id="footer" style="color: #f7f0f0;">Have an account? <a id="logIn"href="#">Log In</a> </p> 
+                        <p id="dcStocks">&copy 2020 DC-Stocks</p>
                     </form>
                 </article>
             </div>             
@@ -89,6 +134,10 @@
         <!--container end.//-->
         <br>
         <br>
-    </head>
-    <body></body>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </body>
 </html>
