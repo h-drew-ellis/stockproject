@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Signin Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+    <!-- Custom styles for this template -->
+    <!-- <link href="sign-in.css" rel="stylesheet"> -->
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css" />
+
+</head>
+
+<body class="text-center" style="background-image: url('plasma_d.gif'); color: #ffffff; background-repeat: repeat;">
+    <form class="form-signin">
+        <img alt="" width="72" height="72" style="background-image: url('download.jpeg');">
+        <h1 class="h3 mb-3 font-weight-normal" style="color: #f7f2f2;">Please sign in</h1>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <div class="checkbox mb-3">
+            <label style="color: #fbf9f9;">
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <p class="mt-5 mb-3 text-muted" style="color: #f9f3f3;">&copy; 2020 DC-Stocks</p>
+    </form>
+
+    <div id="firebaseui-auth-container">
+
+    </div>
+
+    <button id="testbutton">Test button - please ignore</button>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- 
+        =======================FIREBASE===========================
+        The core Firebase JS SDK is always required and must be listed first  =======================FIREBASE=========================== -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+                 https://firebase.google.com/docs/web/setup#available-libraries -->
+                <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js">
+                // Firebase Authentication</script>
+                <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js">
+                // Firebase Realtime database
+                </script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "Input api key here",
+            authDomain: "stock-a30ff.firebaseapp.com",
+            databaseURL: "https://stock-a30ff.firebaseio.com",
+            projectId: "stock-a30ff",
+            storageBucket: "stock-a30ff.appspot.com",
+            messagingSenderId: "628920247502",
+            appId: "1:628920247502:web:93439270d44745fc435c9f"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.js"></script>
+
+    <!-- <script src="assets/js/firebase-sign-in.js"></script> -->
+    <script src="assets/js/firebase-app.js"></script>
+</body>
+
+</html>
