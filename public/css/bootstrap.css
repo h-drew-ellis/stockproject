@@ -11336,14 +11336,13 @@ a.text-dark:focus {
         page-break-inside: avoid;
     }
 
-    p,
-    ,
+    p
      {
         orphans: 3;
         widows: 3;
     }
 
-    h2,
+    h2
      {
         page-break-after: avoid;
     }

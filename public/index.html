@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Firebase Login</title>
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/css/bootstrap.css"/>
+  <!-- Custom styles for this template -->
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css" />
+  <link href="/css/sign-in.css" rel="stylesheet">
+</head>
+
+<body class="text-center" style="background-image: url('plasma_d.gif'); color: #ffffff; background-repeat: repeat;">
+    <div id="login-container" style='background-color: #ffffff;'> 
+      <h1 style = "color: black;">Stocks</h1>
+      <img alt="" width="72" height="72" style="background-image: url('download.jpeg');">
+      <div id="firebaseui-auth-container">
+      
+      </div>
+      <div id="recaptcha-container">
+      
+      </div>
+    </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/popper.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+
+  <!-- 
+        =======================FIREBASE===========================
+        The core Firebase JS SDK is always required and must be listed first  =======================FIREBASE=========================== -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+                 https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js">
+                // Firebase Authentication</script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js">
+                // Firebase Realtime database
+  </script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBz83kqwVu8gWrGAjkitG3sh5VtbWfbG2U",
+      authDomain: "stock-a30ff.firebaseapp.com",
+      databaseURL: "https://stock-a30ff.firebaseio.com",
+      projectId: "stock-a30ff",
+      storageBucket: "stock-a30ff.appspot.com",
+      messagingSenderId: "628920247502",
+      appId: "1:628920247502:web:93439270d44745fc435c9f"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.js"></script>
+
+  <!-- <script src="assets/js/firebase-sign-in.js"></script> -->
+  <script src="/js/firebase-sign-in.js"></script>
+</body>
+
+</html>
