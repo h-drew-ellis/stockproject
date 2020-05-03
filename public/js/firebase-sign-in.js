@@ -7,14 +7,14 @@ console.log("test")
 
 
 // Initialize the FirebaseUI Widget using Firebase.
-var ui = new firebaseui.auth.AuthUI(firebase.auth());
+let ui = new firebaseui.auth.AuthUI(firebase.auth());
+
+
 
 let uiConfig = {
     callbacks: {
         signInSuccessWithAuthResult: function(authResult, redirectURL) {
-            // User successfully signed in.
-            // Return type determines whether we continue the redirect automatically
-            // NOTE: or whether we leave that to developer to handle.
+            // let redirectURL = '</sign-in.html>'
             return true;
         },
         uiShown: function () {
@@ -27,11 +27,10 @@ let uiConfig = {
     // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
     signInFlow: 'popup',
     // NOTE: Succesfully logged in, if you're not redirected in 5s...
-    signInSuccessUrl: '<sign-in.html>', // placeholder 
+    signInSuccessUrl: '</index_1588363206.html>', // placeholder 
     signInOptions: [
         // Leave the lines as is for the providers you want to offer your users.
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-        firebase.auth.TwitterAuthProvider.PROVIDER_ID,
         firebase.auth.GithubAuthProvider.PROVIDER_ID,
         firebase.auth.EmailAuthProvider.PROVIDER_ID,
         firebase.auth.PhoneAuthProvider.PROVIDER_ID
@@ -109,7 +108,7 @@ confirmationResult.confirm(code).then(function(result){
       // ###################################################################### \\ 
 
 // temp variable to hold the anonymous user data if needed.
-let data = null
+// let data = null
 // Hold a reference to the anonymous current user.
 var anonymousUser = firebase.auth().currentUser;
 ui.start('#firebaseui-auth-container', {
