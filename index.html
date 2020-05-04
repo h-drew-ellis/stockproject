@@ -1,121 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>New page</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-    <div class="container">
-        <br>
-        <hr>
-        <div class="card bg-light" style="background-image: url('plasma_d.gif');">
-            <article class="card-body mx-auto" style="max-width: 400px;">
-                <h4 class="card-title mt-3 text-center" style="color: #f9f9f9;">Create Account</h4>
-                <p class="text-center" style="color: #fefefe;">Get started with your free account</p>
-                <p>
-                    <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
-                    <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
-                </p>
-                <p class="divider-text"> <span class="bg-light">OR</span> </p>
-                <form>
-                    <div class="form-group input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                        </div>
-                        <input name="" class="form-control" placeholder="Full name" type="text">
-                    </div>
+  <title>Firebase Login</title>
 
-                    <!-- form-group// -->
-                    <div class="form-group input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
-                        </div>
-                        <input name="" class="form-control" placeholder="Email address" type="email">
-                    </div>
-
-                    <!-- form-group// -->
-                    <div class="form-group input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
-                        </div>
-                        <select class="custom-select" style="max-width: 120px;">
-                                <option selected="">+971</option>
-                                <option value="1">+972</option>
-                                <option value="2">+198</option>
-                                <option value="3">+701</option>
-                            </select>
-                        <input name="" class="form-control" placeholder="Phone number" type="text">
-                    </div>
-
-                    <!-- form-group// -->
-                    <div class="form-group input-group">
-                        <div class="input-group-prepend">
-                        </div>
-                    </div>
-
-                    <!-- form-group end.// -->
-                    <div class="form-group input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                        </div>
-                        <input class="form-control" placeholder="Create password" type="password">
-                    </div>
-
-                    <!-- form-group// -->
-                    <div class="form-group input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                        </div>
-                        <input class="form-control" placeholder="Repeat password" type="password">
-                    </div>
-
-                    <!-- form-group// -->
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
-                    </div>
-
-                    <!-- form-group// -->
-                    <p class="text-center" style="color: #f7f0f0;">Have an account? <a href="">Log In</a> </p>
-                </form>
-            </article>
-        </div>
-
-        <!-- card.// -->
-    </div>
-    <!--container end.//-->
-    <br>
-    <br>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+  <style>
+    button {
+    line-height: 14px;
+    font-size: 14px;
+    padding: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;    
+    }
+    #google-sign-in-button {
+      width: 18px;
+      height: 18px;
+    }
+    #logo {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  </style>
 </head>
 
 <body>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <pre id="object">
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-             https://firebase.google.com/docs/web/setup#available-libraries -->
+  </pre>
+  <div class="container">
+    <input id="txtEmail" type="email" placeholder="Email">
 
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyBz83kqwVu8gWrGAjkitG3sh5VtbWfbG2U",
-            authDomain: "stock-a30ff.firebaseapp.com",
-            databaseURL: "https://stock-a30ff.firebaseio.com",
-            projectId: "stock-a30ff",
-            storageBucket: "stock-a30ff.appspot.com",
-            messagingSenderId: "628920247502",
-            appId: "1:628920247502:web:93439270d44745fc435c9f"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-    </script>
+    <input id="txtPassword" type="password" placeholder="Password">
+
+    <button id="btnLogin" class="btn btn-action">
+      Log-in
+    </button>
+    <button id="btnSignUp" class="btn btn-secondary">
+      Sign Up
+    </button>
+    <button id="btnLogout" class="btn btn-secondary">
+      Log out
+    </button>
+    <button id="google-sign-in-button" style="background-color: #ffffff;">
+      <span id="logo">
+        <img id="google-logo" alt="" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg">
+      </span>
+      <span class="webpage">Sign in with Google</span>
+      <span class="mobile">Google</span>
+    </button>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="phone number">
+    <button id="phone-sign-in-button" style="background-color:#02bd7e">
+      <span id="phone-logo">
+        <img class="phone-icon" alt="" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/phone.svg">
+      </span>
+      <span>
+        <span class="webpage">Sign in with Phone</span>
+        <span class="mobile">Phone</span>
+      </span>
+    </button>
+
+    <button class="btn btn-default" onclick="getProfileData()">Get Profile</button>
+    <button class="btn btn-danger" onclick="getProfileData()">Logout</button>
+    <pre id="errorPre">
+
+    </pre>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBz83kqwVu8gWrGAjkitG3sh5VtbWfbG2U",
+      authDomain: "stock-a30ff.firebaseapp.com",
+      databaseURL: "https://stock-a30ff.firebaseio.com",
+      projectId: "stock-a30ff",
+      storageBucket: "stock-a30ff.appspot.com",
+      messagingSenderId: "628920247502",
+      appId: "1:628920247502:web:93439270d44745fc435c9f"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="js/fb-sign-in.js"></script>
 </body>
 
 </html>
