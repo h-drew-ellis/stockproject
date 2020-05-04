@@ -1,6 +1,15 @@
-html,
+
+
+
+@media only screen and (min-width: 325px) and (max-width: 815px) {
 body {
     height: 100%;
+}
+
+
+#rememberMe {
+
+    margin-top: 20px
 }
 
 body {
@@ -16,6 +25,7 @@ body {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #4c4545;
+
 }
 
 .form-signin {
@@ -42,18 +52,24 @@ body {
 }
 
 .form-signin input[type="email"] {
-    margin-bottom: -1px;
+    
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+    margin-bottom: 10px;
 }
 
 .form-signin input[type="password"] {
-    margin-bottom: 10px;
+    
     border-top-left-radius: 0;
+    margin-bottom: -1px;
     border-top-right-radius: 0;
 }
 
 
+<<<<<<< HEAD
 #button {
     background-color: blue;
+=======
+
+>>>>>>> 838b4fa4bcfd34a7e232b1c67d31645e03ac8965
 }
