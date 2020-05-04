@@ -1,0 +1,118 @@
+@media only screen and (min-width: 325px) and (max-width: 815px) {
+
+
+
+/* .divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+} */
+
+/* .divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;
+    z-index: 2;
+}
+
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+} */
+
+.createAccount {
+    color: rgb(253, 253, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    padding: 0;  
+}
+
+#accountText {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+
+.textBoxes {
+
+  
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+    height: 30px;
+    margin-bottom: 5px;
+    border-style: ridge;
+    border-color: rgb(230, 229, 229);
+    border-radius: 1px;
+    border-width: 1px;
+    font-size: small;
+}
+
+#footer {
+
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#submitButton {
+
+    background-color: rgb(50, 48, 189);
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border-style: solid;
+    border-radius: 20px;
+    margin-top: 5px;
+    border-width: 0;
+    cursor: pointer;
+    padding: 0
+   
+
+}
+
+#logIn {
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: small;
+}
+
+#dcStocks {
+
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    font-size: small;
+    font-weight: lighter;
+}
+
+}
